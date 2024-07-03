@@ -3,8 +3,10 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import "jquery";
 import "semantic-ui"
+import "channels"
+import {scrollBottom} from "./utils";
 
 $(document).on('turbo:load', function() {
    $('.ui.dropdown').dropdown();
+   scrollBottom();
 })
-import "channels"
