@@ -1,0 +1,8 @@
+<% flash.each do |message_type, message| %>
+  <div id="target" class="ui <%= message_type == "success" ? "success " : "error " %>message transition">
+    <i class="close icon" onclick="this.parentElement.style.display='none';"></i>
+    <div class="header">
+      <%= message %>
+    </div>
+  </div>
+<% end %>
